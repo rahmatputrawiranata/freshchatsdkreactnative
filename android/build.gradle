@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion "28.0.2"
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         minSdkVersion 16
@@ -31,12 +31,12 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.4.2'
     }
 }
 
 dependencies {
-    compile "com.facebook.react:react-native:+"
-    compile 'com.google.android.gms:play-services-gcm:11.+'
-    compile 'com.github.freshdesk:freshchat-android:3.0.0'
+    implementation "com.facebook.react:react-native:+"
+    implementation 'com.google.android.gms:play-services-gcm:11.+'
+    implementation 'com.github.freshdesk:freshchat-android:3.0.0'
 }
